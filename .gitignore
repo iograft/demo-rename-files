@@ -1,0 +1,5 @@
+# Ignore the generated renamed files directory.
+files/renamed
+
+*.pyc
+.DS_Store
