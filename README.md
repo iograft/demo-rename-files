@@ -2,6 +2,12 @@
 
 This repository provides an iograft graph that demonstrates how iograft could be used to automate the renaming of files.
 
+Given a directory of images (or any other filetype) and a string representing the "format" of the filenames, this graph renames the files based on a new filename "format" string. For example:
+
+- Given an image file: `1.ceramic.cube.png`, the input "format" can be described as: `{frame:d}.{shader}.{asset}.png`. The first `{frame:d}` implies we are parsing a _number_ representing a "frame". 
+- Now by providing a new "format" such as: `{asset}_{shader}.{frame:04d}.png`, we can remap these parsed values to rename the file as `cube_ceramic.0001.png`.
+- `1.ceramic.cube.png` -> `cube_ceramic.0001.png`
+
 The graph uses ONLY the built-in nodes that come with iograft (as of version 1.3.2), and this repository contains some example image files that are used for the example graph (in the "files" directory).
 
 ## Running the Demo
