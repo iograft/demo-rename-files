@@ -7,8 +7,10 @@ The graph uses ONLY the built-in nodes that come with iograft (as of version 1.3
 ## Running the Demo
 
 In order to run this demo, first clone or download the repository. Then open the "rename_files.iog" graph file in iograft.
+![The loaded "rename_files.iog" graph](resources/rename_files_graph.png)
 
-The only value that needs to be set on the graph in order to execute is the `image_directory` graph input. Set this to the "files" directory of this cloned/downloaded repository.
+The only value that needs to be set on the graph in order to execute is the `image_directory` graph input. Set this to the "files" directory of this cloned/downloaded repository:
+![The "image_directory" graph input](resources/set_image_directory.png)
 
 Once the graph is executed, renamed files will be generated in the "renamed" subdirectory of the "files" directory.
 
